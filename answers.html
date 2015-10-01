@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="ui.css" />
+    <link rel="stylesheet" href="http://libs.useso.com/js/jquery-mobile/1.4.2/jquery.mobile.css"/>
+
+    <script src="http://libs.useso.com/js/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://libs.useso.com/js/jquery-mobile/1.4.2/jquery.mobile.min.js"></script>
+    <script src="jquery.cookie.js"></script>
+    <script src="answers.js"></script>
+    <script src="bottomtext.js"></script>
+    <title></title>
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>知乎互助社区</h1>
+            
+        </div>
+        <!-- /header -->
+        <div role="main" class="ui-content">
+        <h4>以下是您最近回答过的问题,选择一个您想要推荐的答案进行互赞。</h4>
+            <ul id="main_answers_list" data-role="listview" data-count-theme="b" data-inset="true">
+            
+                <li class="answer-item" answer-id=""><a class="answer-title">加载中.. </a><span class="ui-li-count">0</span></li>
+
+            </ul>
+        </div>
+        <!-- /content -->
+
+
+        <p class="index-bottom-text">目前在线人数 ：<i id="total-count">0</i>
+        <br>您已经送出赞： <i id="vote-count">0</i>
+        <br> 您共获得的赞： <i id="get-vote-count">0</i>
+        <br>
+        <br>本程序脚本通过知乎网站抓包编写,不会保存您的用户信息。</p>
+        <button id="github-btn" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-heart">Github开源地址</button>
+
+    </div>
+    <!-- /page -->
+</body>
+
+</html>

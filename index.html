@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://libs.useso.com/js/jquery-mobile/1.4.2/jquery.mobile.css"/>
+    <link rel="stylesheet" href="ui.css"/>
+    <script src="http://libs.useso.com/js/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://libs.useso.com/js/jquery-mobile/1.4.2/jquery.mobile.min.js"></script>
+    <script src="jquery.cookie.js"></script>
+    <script src="index.js"></script>
+    <script src="bottomtext.js"></script>
+
+    <title></title>
+</head>
+<body>
+<div data-role="page">
+
+    <div data-role="header">
+        <h1>知乎互助社区</h1>
+    </div>
+    <!-- /header -->
+
+    <div role="main" class="ui-content">
+            <input type="text" name="zhihuname" id="zhihuname" autocomplete="on" placeholder="请填写您的知乎账号"
+                   value="">
+            <input type="password" name="zhihupass" id="zhihupass" autocomplete="on" placeholder="请填写您的知乎密码"
+                   value="">
+            <input type="text" name="zhihucaptcha" id="zhihucaptcha" placeholder="请填写验证码" value="">
+        <img id="zhihucaptcha-img" class="js-captcha-img" width="120" height="30">
+        <input type="submit" id="zhihu-login-btn" value="登录">
+
+    </div>
+    <!-- /content -->
+
+        <p class="index-bottom-text">目前在线人数 ：<i id="total-count">0</i>
+        <br>您已经送出赞： <i id="vote-count">0</i>
+        <br>您共获得的赞： <i id="get-vote-count">0</i>
+        <br>
+        <br>本程序脚本通过知乎网站抓包编写,不会保存您的用户信息。</p>
+        <button id="github-btn" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-heart">Github开源地址</button>
+
+</div>
+<!-- /page -->
+
+</body>
+</html>

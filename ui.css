@@ -1,0 +1,25 @@
+.js-captcha-img{
+    display: inline-block;
+    margin-left: 20px;
+    float: right;
+    width: 80px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.index-bottom-text{
+    color: #888;
+    margin: 10px 10px;
+}
+
+.index-bottom-text i{
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: #0d77e4;
+
+}
+
+#main-state,#mian-answer-title {
+    font-style: bold;
+    color: #0d77e4;
+}
